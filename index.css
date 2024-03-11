@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+}
+
+header {
+    background: white;
+    height: 67px;
+    width: 375px;
+}
+
+.container {
+    width: 375px;
+    margin: 0;
+    display: flex;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 137px;
+    height: 66px;
+    padding: 0px 10px;
+}
+
+header .avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    padding: 18px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.text {
+    font-family: "Source Sans 3";
+    line-height: 15px;
+    margin: 0;
+}
+
+.name {
+    font-size: 13px;
+    font-weight: 900;
+    padding-top: 15px;
+}
+
+.location {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.underline {
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.post {
+    width: 375px;
+}
+
+.icon {
+    width: 27px;
+    height: 27px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 4px;
+    padding-bottom: px;
+}
+
+.post-reviews h1{
+    padding-left: 12px;
+}
