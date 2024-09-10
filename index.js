@@ -28,4 +28,29 @@ const posts = [
     }
 ]
 
- 
+const postsEl = document.getElementById("posts-el")
+let postsHTML = ""
+
+for (i = 0; i < posts.length; i++) {
+    postsHTML += `
+        <div class="post-header">
+            <img class="avatar" src=${posts[i].avatar}>
+            <div>
+                <div class="post-name">${posts[i].name}</div>
+                <div class="post-location">${posts[i].location}</div>
+            </div>
+        </div>
+        
+        <img class="post" src="${posts[i].post}">
+        <img class="icon" src="images/icon-heart.png">
+        <img class="icon" src="images/icon-comment.png">
+        <img class="icon" src="images/icon-dm.png">
+        <p class="bold">${posts[i].likes} likes</p>
+        <p><span class="bold">${posts[i].username}</span> ${posts[i].comment}</p>
+    `
+    if (i != posts.length - 1) {
+        postsHTML += '<div class="grey-space"></div>'
+    }
+}
+
+postsEl.innerHTML = postsHTML
